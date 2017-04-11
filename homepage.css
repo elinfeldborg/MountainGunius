@@ -1,0 +1,287 @@
+body{
+	margin: 0px;
+	background-image: url("images/brushed.png");
+	font-family: 'Montserrat', sans-serif;
+}
+
+body > header {
+	height: 0px;
+	line-height: 50px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	box-shadow: 0 0 5px #666;
+}
+
+body > header > nav{
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+header > a:hover{
+	background-color: #666;
+}
+
+#menu{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	border-bottom: 2px solid #eee;
+}
+
+#menu-btn{
+	display: none;
+}
+
+#menu > li{
+	float: left;
+	list-style: none;
+}
+
+#menu > li > a{
+	display: block;
+	color: #eee;
+	padding: 0 20px;
+	text-decoration: none;
+	transition: 1s all;
+}
+
+#menu > li > a:hover{
+	background-color: #666;
+}
+
+
+#logo{
+	font-size: 24px;
+	color: #fff;
+	font-style: bold;
+	text-decoration: none;
+	float: left;
+}
+
+#search-box{
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 20px;
+	border: 0px;
+	border-radius: 5px;
+	width: 150px;
+	padding-left: 10px;
+	transition: 0.5s all;
+}
+
+#search-box.active{
+	width: 250px;
+}
+
+#jumbo{
+	width: 100%;
+	height: 100px;
+	background-image: url("bild.jpg");
+	background-position: center;
+	overflow: hidden;
+	padding-bottom: -50px;
+	padding-top: 650px;
+	background-size: 1300px;
+}
+/*
+#jumbo > article > h1 {
+	font-size: 38px;
+	font-family: 'Rock Salt', cursive;
+	color: #333333;
+	margin-top: -2%;
+}
+
+#jumbo > article{
+	width: 50%;
+	padding: 20px;
+	border-radius: 10px;
+	margin: -400px auto 0px auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	text-align: center;
+}
+
+#jumbo > article > p {
+	margin-top: -5%;
+}
+
+#join-us-btn{
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	color: #000;
+	text-decoration: none;
+	margin: 10px auto 0px auto;
+	display: block;
+	box-shadow: 0 0 3px #999;
+	background-color: #fff;
+	transition: 1s all;
+	border-radius: 5px;
+}
+
+#join-us-btn:hover{
+	background-color: #ccc;
+}
+*/
+
+#countries{
+	max-width: 1200px;
+	margin: 0 auto 30px auto;
+	overflow: hidden;
+	padding: 10px;
+}
+
+#countries  > h2{
+	border-bottom: 2px solid #666;
+	padding: 10px 0px;
+}
+
+#countries > figure{
+	width: 23%;
+	margin: 1%;
+	float: left;
+	background-color: #fff;
+	box-shadow: 0 0 5px #999;
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+#countries > figure > h3{
+	text-align: center;
+	background-color: #000;
+	color: #eee;
+	margin: 0px;
+	padding: 10px 0px;
+	clear: both;
+	font-size: 16px;
+}
+
+#countries > figure  > img{
+	float: left;
+	margin-right: 5px;
+	width: 110px;
+	height: 112px;
+}
+
+#countries > figure  > figcaption{
+	font-size: 10px;
+	padding: 10px;
+}
+
+body > footer{
+	background-color: #000;
+	box-shadow: 0 0 50px #666;
+	clear: both;
+	color: #eee;
+	overflow: hidden;
+  text-align: center;
+	padding-bottom: 40px;
+}
+
+body > footer > article{
+	max-width: 1200px;
+	margin: auto;
+	padding: 10px;
+}
+
+body > footer > article  > section{
+	width: calc(100%/3);
+	float: left;
+	margin: 0px;
+	text-decoration: underline;
+}
+
+body > footer > article  > section a{
+	color: #fff;
+	text-decoration: none;
+}
+
+body > footer > article > section > ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	}
+
+@media screen and (max-width: 600px){
+	#menu{
+		position: fixed;
+		top: 49px;
+		left: 0px;
+		right: 0px;
+		max-height: 0px;
+		overflow: hidden;
+		background-color: #000;
+		box-shadow: 0 5px 5px #666;
+		transition: 3s all;
+	}
+
+	#jumbo{
+		width: 100%;
+		background-position: center;
+		overflow: hidden;
+		padding-top: 500px;
+	}
+
+	#menu.show{
+		max-height: 300px;
+	}
+
+	#menu > li{
+		width: 100%;
+		float: none;
+	}
+
+	#search-box, #search-box.active{
+		width: 90%;
+		margin: 10px 5%;
+	}
+
+	#menu-btn{
+		display: block;
+		float: right;
+		color: black;
+		text-decoration: none;
+		padding: 0 10px;
+		font-size: 20px;
+		border-bottom: 4px solid #666;
+	}
+
+	#jumbo > article > h1 {
+		font-size: 20px;
+		padding-bottom: 2%;
+	}
+
+	#jumbo > article{
+		width: 100%;
+		padding: 10px 0px;
+		margin-top: -300px;
+		border-radius: 0px;
+		font-size: 15px;
+	}
+#countries {
+	margin-top: -20px;
+}
+	#countries  > h2{
+		text-align: center;
+	}
+
+#countries > figure{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	body > footer > article > section{
+		width: 100%;
+		text-align: center;
+	}
+
+	body > footer > article > section > ul{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+}
