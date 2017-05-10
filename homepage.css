@@ -7,15 +7,13 @@ body{
 }
 
 body > header {
-	height: 0px;
-	line-height: 60px;
+	line-height: 70px;
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	/*box-shadow: 0 0 5px #666;*/
 	position: absolute;
 	z-index: 2;
-	height: 60px;
+	height: 70px;
 	background-color: rgba(255, 255, 255,0.7);
 }
 
@@ -89,11 +87,10 @@ header > a:hover{
     height: 0px;
     position: absolute;
 		overflow: hidden;;
-		background-color: rgba(255, 255, 255,0.7);
+		background-color: #fff;
     min-width: 160px;
     z-index: 1;
 		transition: 0.5s all;
-		width: 30px;
 }
 
 .dropdown-content a {
@@ -105,13 +102,12 @@ header > a:hover{
 }
 
 .dropdown-content a:hover {
-	transition: 0,5s all;
-	background-color: #fff;
+	background-color: #cce7ff;
+	transition: all 0.7;
 }
 
 .dropdown:hover .dropdown-content {
-    height: 250px;
-
+    height: 270px;
 }
 
 #search-box{
@@ -140,8 +136,9 @@ header > a:hover{
 
 #jumbo{
 	width: 100%;
-	height: 100px;
+	height: 130px;
 	background-position: center;
+	background-image: url("bilder/bild2.jpg");
 	overflow: hidden;
 	padding-bottom: 100px;
 	padding-top: 500px;
@@ -159,13 +156,17 @@ header > a:hover{
 	width: 50%;
 	padding: 20px;
 	border-radius: 10px;
-	margin: -400px auto 0px auto;
+	margin: -350px auto 40px auto;
 	background-color: rgba(255, 255, 255, 0.7);
 	text-align: center;
 }
 
 #jumbo > article > p {
-	margin-top: -5%;
+	padding: 30px;
+}
+
+#jumbo > article > h1 {
+	margin-bottom: -20px;
 }
 
 /*

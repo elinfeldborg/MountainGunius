@@ -9,7 +9,6 @@
 		<link href="homepage.css" type="text/css" rel="stylesheet">
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='homepage.css') }}">
 		<script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
-
 		<script src="homepage.js"></script>
 	</head>
 	<body>
@@ -21,18 +20,18 @@
 					<li><a href="homepage.html" class="active">Home</a></li>
 
 					<div class="dropdown">
-  					<button class="dropbtn">Austria</button>
-  						<div class="dropdown-content">
-    						<a href="stAnton.html">St Anton</a>
-    						<a href="#">Ischgl</a>
-    						<a href="#">Mayrhofen</a>
-  						</div>
+						<button class="dropbtn">Austria</button>
+							<div class="dropdown-content">
+								<a href="stAnton.html">St Anton</a>
+								<a href="#">Ischgl</a>
+								<a href="#">Mayrhofen</a>
+							</div>
 					</div>
 
 					<div class="dropdown">
 						<button class="dropbtn">France</button>
 							<div class="dropdown-content">
-								<a href="chamonix.html">Chamonix</a>
+								<a href="#">Chamonix</a>
 								<a href="#">Alpe d'Huez</a>
 								<a href="#">Val Thorens</a>
 							</div>
@@ -67,43 +66,52 @@
 			</nav>
 		</header>
 
-		<div id="slide">
-			<div class="slider" id="main-slider">
-					<div class="slider-wrapper">
-						<img src="bilder/hej1.jpg" alt="First" class="slide" />
-						<img src="bilder/hej2.jpg" alt="Second" class="slide" />
-						<img src="bilder/hej3.jpg" alt="Third" class="slide" />
-						<img src="bilder/hej4.jpg" alt="Third" class="slide" />
-						<img src="bilder/hej5.jpg" alt="Third" class="slide" />
-					</div>
-			</div>
-		</div>
+		  <div id="jumbo">
+		    <article>
+					<h1>
+						Chamonix
+					</h1>
+					<p>
+						Extremskidåkningens födelseort Chamonix erbjuder det största och mesta när det kommer till skidåkning.
+						Varje centimeter av berget och byn andas historia och hit åker du om du är intresserad av brantåkning.
+						Legenderna som har bosatt sig under Mont Blanc - alpernas högsta berg - är många.
+						Dessvärre är det även många som har förolyckats på bergens extrema branter.
+						Orten består av fem skidorter som är: Grands Montets, Les Houches, Le Tour/Balme, La Flegere och Le Brevent.
+
+						År 2010 hade kommunen Chamonix-Mont-Blanc 9 054 invånare men många fler rör sig dagligen i orten.
+						Chamonix har fler besökare under sommaren än vintern med omkring 100 000 per dag under sommaren och 60 000 per dag under vintern.
+						De första olympiska vinterspelen gick av stapeln här 1924.
+						Chamonix ligger i sydöstra Frankrike endast 20 minuters bilfärd från Italien under Mont Blanctunneln.
+						Du har nära till både Geneve och Milano härifrån och restiden till flygplatsen i Geneve är en timme då det bara är drygt åtta mil bort.
+					</p>
+				</article>
+		  </div>
 
 		<footer>
 			<article>
 				<section id="links">
 					<h4>Links</h4>
 					<ul>
-						<li><a href="homepage.html">Home</a></li>
-						<li><a href="austria.html">Austria</a></li>
-						<li><a href="france.html">France</a></li>
-						<li><a href="italy.html">Italy</a></li>
-						<li><a href="switzerland.html">Switzerland</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Austria</a></li>
+						<li><a href="#">France</a></li>
+						<li><a href="#">Italy</a></li>
+						<li><a href="#">Switzerland</a></li>
 					</ul>
 				</section>
 				<section>
 					<h4>Official links</h4>
-					<ul>
-						<li><a href="https://www.freeride.se/">Freeride</a></li>
-						<li><a href="https://armadaskis.com/eu/">Armada</a></li>
-						<li><a href="https://www.voelkl.com/">Völkl</a></li>
-						<li><a href="https://www.atomic.com/en-se">Atomic</a></li>
-					</ul>
-				</section>
+						<ul>
+							<li><a href="https://www.freeride.se/">Freeride</a></li>
+							<li><a href="https://armadaskis.com/eu/">Armada</a></li>
+							<li><a href="https://www.voelkl.com/">Völkl</a></li>
+							<li><a href="https://www.atomic.com/en-se">Atomic</a></li>
+						</ul>
+					</section>
 				<section>
 					<h4>Contact</h4>
 					<ul>
-							<li><a href="contact.html">Mail</a></li>
+							<li><a href="#">Mail</a></li>
 							<li><a href="#">About us</a></li>
 				</section>
 			</article>
