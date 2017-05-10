@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exempelsida</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+		<link href="homepage.css" type="text/css" rel="stylesheet">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='homepage.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+		<script src="homepage.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+				<a href="homepage.html" id="logo">Mountain Genius</a>
+				<ul id="menu">
+					<li><a href="homepage.html" class="active">Home</a></li>
+
+					<div class="dropdown">
+						<button class="dropbtn">Austria</button>
+							<div class="dropdown-content">
+								<a href="stAnton.html">St Anton</a>
+								<a href="#">Ischgl</a>
+								<a href="#">Mayrhofen</a>
+							</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">France</button>
+							<div class="dropdown-content">
+								<a href="#">Chamonix</a>
+								<a href="#">Alpe d'Huez</a>
+								<a href="#">Val Thorens</a>
+							</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Italy</button>
+							<div class="dropdown-content">
+								<a href="#">Champoluc</a>
+								<a href="#">Sestriere</a>
+								<a href="#">Canazei</a>
+							</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Switzerland</button>
+							<div class="dropdown-content">
+								<a href="#">Disentis</a>
+								<a href="#">Davos</a>
+								<a href="#">Engelberg</a>
+							</div>
+					</div>
+
+					<li><a href="contact.html">Contact</a></li>
+
+					<li>
+						<input type="search" name="query" id="search-box" placeholder="Search here...">
+					</li>
+
+				</ul>
+				<a href="#" id="menu-btn">Meny</a>
+			</nav>
+		</header>
+
+		  <div id="jumbo">
+		    <article>
+					<h1>
+						St. Anton
+					</h1>
+					<p>
+						När alperna nämns finns det några orter som letar sig in i tankarna oavsett var i världen en råkar vara för tillfället.
+						St Anton am Arlberg är en av de orterna. Denna by i Österrike har varit en av pionjärerna för mycket av det vi idag ser som självklart för en skidort.
+						Den första skidklubben öppnade 1901, den första skidtävlingen i byn hölls 1904 och redan 1921 öppnade den första skidskolan!
+						När Österrike på 30-talet började kännas blassé valde många lokala skidlärare att utvandra till USA för att lära jänkarna åka skidor
+						och fortsätta föra sporten framåt i andra delar av världen.
+
+						Kort och gott, det är en by med långa alpin anor och en framåtanda som heter duga.
+						På det sättet har det sedan fortsatt, hela tiden i framkant och alltid det bästa.
+						Samtidigt som byn behållit sin gemytlighet är det bara det mest moderna och det bästa som duger åt skidsystemet.
+						Idag är skidsystemet även sammankopplat med bland andra St Christoph och Stuben.
+					</p>
+				</article>
+		  </div>
+			<div id="information">
+				<section>
+					<h2>
+					Antal backar
+					</h2>
+						<p>
+					 		134
+						</p>
+					<h2>
+						Säsong
+					</h2>
+						<p>
+							December - April
+						</p>
+					<h2>
+						Antal nedfarter
+					</h2>
+						<p>
+						 	340
+						</p>
+					<h2>
+						Längsta nedfart
+					</h2>
+						<p>
+							10.2 kilometer
+						</p>
+					<h2>
+						Högsta topp
+					</h2>
+						<p>
+						 	2,811 meter
+						</p>
+				</section>
+			</div>
+
+		<footer>
+			<article>
+				<section id="links">
+					<h4>Links</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Austria</a></li>
+						<li><a href="#">France</a></li>
+						<li><a href="#">Italy</a></li>
+						<li><a href="#">Switzerland</a></li>
+					</ul>
+				</section>
+				<section>
+					<h4>Official links</h4>
+						<ul>
+							<li><a href="https://www.freeride.se/">Freeride</a></li>
+							<li><a href="https://armadaskis.com/eu/">Armada</a></li>
+							<li><a href="https://www.voelkl.com/">Völkl</a></li>
+							<li><a href="https://www.atomic.com/en-se">Atomic</a></li>
+						</ul>
+					</section>
+				<section>
+					<h4>Contact</h4>
+					<ul>
+							<li><a href="#">Mail</a></li>
+							<li><a href="#">About us</a></li>
+				</section>
+			</article>
+		</footer>
+
+	</body>
+</html>

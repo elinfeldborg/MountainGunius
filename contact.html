@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exempelsida</title>
+  <title>Contact</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
   <link href="homepage.css" type="text/css" rel="stylesheet">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='homepage.css') }}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
   <script src="homepage.js"></script>
 </head>
 <body>
@@ -15,14 +17,49 @@
       <a href="homepage.html" id="logo">Mountain Genius</a>
       <ul id="menu">
         <li><a href="homepage.html" class="active">Home</a></li>
-        <li><a href="austria.html">Austria</a></li>
-        <li><a href="france.html">France</a></li>
-        <li><a href="italy.html">Italy</a></li>
-        <li><a href="switzerland.html">Switzerland</a></li>
+
+        <div class="dropdown">
+          <button class="dropbtn">Austria</button>
+            <div class="dropdown-content">
+              <a href="stAnton.html">St Anton</a>
+              <a href="#">Ischgl</a>
+              <a href="#">Mayrhofen</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">France</button>
+            <div class="dropdown-content">
+              <a href="chamonix.html">Chamonix</a>
+              <a href="#">Alpe d'Huez</a>
+              <a href="#">Val Thorens</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Italy</button>
+            <div class="dropdown-content">
+              <a href="#">Champoluc</a>
+              <a href="#">Sestriere</a>
+              <a href="#">Canazei</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Switzerland</button>
+            <div class="dropdown-content">
+              <a href="#">Disentis</a>
+              <a href="#">Davos</a>
+              <a href="#">Engelberg</a>
+            </div>
+        </div>
+
         <li><a href="contact.html">Contact</a></li>
+
         <li>
           <input type="search" name="query" id="search-box" placeholder="Search here...">
         </li>
+
       </ul>
       <a href="#" id="menu-btn">Meny</a>
     </nav>
@@ -32,7 +69,6 @@
     <article>
       <h1>Contact us!</h1>
          <p>If you have any commenst or questions, please contact us below.</p>
-
           <form id="form" action="mailto:mountaingenius17@gmail.com" method="post" enctype="text/plain">
                 <label for="name">Name:</label>
                 <input type="name" name="name" id="name" required><br>
@@ -45,6 +81,40 @@
           </form>
     </article>
   </div>
+
+  <div>
+      <article id="countries">
+        <h1>We are Mountain Genius</h1>
+        <figure>
+          <img src="bilder/elinFN.jpg" alt="Austria">
+        </figure>
+        <figure>
+          <img id="elinrossander" src="bilder/elinRossander.jpg" alt="France">
+        </figure>
+        <figure>
+          <img src="bilder/ellinor.jpg" alt="Italy">
+        </figure>
+        <figure>
+          <img src="bilder/mustafa.jpg" alt="Switzerland">
+        </figure>
+      </article>
+  </div>
+
+  <div id="AboutUs">
+    <h2>
+      Elin F. Nielsen
+    </h2>
+    <h2>
+      Elin Rossander
+    </h2>
+    <h2>
+      Ellinor Mavéus
+    </h2>
+    <h2>
+      Mustafa Riyadh
+    </h2>
+  </div>
+
 
 			</div>
       <footer>
