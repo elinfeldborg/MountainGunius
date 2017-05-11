@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def homepage_html():
-   return render_template('homepage.html, tips = cursor')
+   return render_template('homepage.html')
 
 @app.route('/stAnton')
 def stAnton_html():
