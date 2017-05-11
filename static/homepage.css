@@ -14,7 +14,7 @@ body > header {
 	position: absolute;
 	z-index: 2;
 	height: 70px;
-	background-color: rgba(255, 255, 255,0.7);
+	background-color: rgba(255, 255, 255,0.5);
 }
 
 body > header > nav{
@@ -49,11 +49,6 @@ header > a:hover{
 	text-decoration: none;
 	transition: 1s all;
 }
-/*
-#menu > li > a:hover{
-	background-color: #666;
-}
-*/
 
 #logo{
 	font-size: 28px;
@@ -136,13 +131,22 @@ header > a:hover{
 
 #jumbo{
 	width: 100%;
-	height: 130px;
+	height: 133px;
 	background-position: center;
 	background-image: url("bilder/bild2.jpg");
 	overflow: hidden;
 	padding-bottom: 100px;
 	padding-top: 500px;
 	background-size: 1300px;
+}
+
+#jumbo > article{
+	width: 50%;
+	padding: 20px;
+	border-radius: 10px;
+	margin: -350px auto 80px auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	text-align: center;
 }
 
 #jumbo > article > h1 {
@@ -152,13 +156,36 @@ header > a:hover{
 	margin-bottom: 50px;
 }
 
-#jumbo > article{
-	width: 50%;
-	padding: 20px;
-	border-radius: 10px;
-	margin: -350px auto 40px auto;
-	background-color: rgba(255, 255, 255, 0.7);
-	text-align: center;
+
+#information > section{
+	width: 100%;
+	height: 200px;
+	background-color: rgba(109, 111, 125, 0.68);
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#information > section > p {
+	float: left;
+	display: block;
+	width: 200px;
+	margin-top: 80px;
+	margin-left: -175px;
+	margin-bottom: 40px;
+	color: #0E9EE1;
+	font-family: 'Josefin Slab', serif;
+	font-size: 21px;
+}
+
+#information > section > h2{
+	float: left;
+	width: 170px;
+	display: block;
+	margin-left: 60px;
+	color: #0E9EE1;
+	font-size: 22px;
+	margin-top: 40px;
 }
 
 #jumbo > article > p {
@@ -168,52 +195,6 @@ header > a:hover{
 #jumbo > article > h1 {
 	margin-bottom: -20px;
 }
-
-/*
-#countries{
-	max-width: 1200px;
-	margin: 0 auto 30px auto;
-	overflow: hidden;
-	padding: 10px;
-	margin-top: -250px;
-}
-
-#countries  > h2{
-	border-bottom: 2px solid #666;
-	padding: 10px 0px;
-}
-
-#countries > figure{
-	width: 23%;
-	margin: 1%;
-	float: left;
-	background-color: #fff;
-	box-shadow: 0 0 5px #999;
-	overflow: hidden;
-	border-radius: 3px;
-}
-
-#countries > figure > h3{
-	text-align: center;
-	background-color: #000;
-	color: #eee;
-	margin: 0px;
-	padding: 10px 0px;
-	clear: both;
-	font-size: 16px;
-}
-
-#countries > figure  > img{
-	float: left;
-	margin-right: 5px;
-	width: 110px;
-	height: 112px;
-}
-
-#countries > figure  > figcaption{
-	font-size: 10px;
-	padding: 10px;
-*/
 
 body > footer{
 	background-color: #000;
@@ -307,8 +288,47 @@ html,body {
 	opacity: 1;
 }
 
+#countries{
+	max-width: 1200px;
+	margin: 0 auto 50px auto;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+#countries > h1 {
+	text-align: center;
+	font-size: 35px;
+}
+
+#countries > figure{
+	width: 23%;
+	height: 280px;
+	margin: 1%;
+	float: left;
+	background-color: #fff;
+	box-shadow: 0 0 5px #999;
+	overflow: hidden;
+	border-radius: 80%;
+}
+
+#countries > figure  > img{
+	width: 400px;
+	height: 280px;
+	margin-left: -55px;
+}
+
+#AboutUs > h2{
+	float: left;
+	display: block;
+	width: 210px;
+	margin-left: 95px;
+	margin-top: -25px;
+	margin-bottom: 80px;
+}
+
 @media screen and (max-width: 600px){
-	#menu{
+
+#menu{
 		position: fixed;
 		top: 49px;
 		left: 0px;

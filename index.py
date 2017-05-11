@@ -4,8 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def homepage_html():
-    '''This is the start page '''
-   return render_template('homepage.html')
+   return render_template('homepage.html, tips = cursor')
 
 @app.route('/stAnton')
 def stAnton_html():
