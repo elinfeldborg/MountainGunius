@@ -14,5 +14,13 @@ def stAnton_html():
 def contact_html():
    return render_template('contact.html')
 
+@app.route('/chamonix')
+def chamonix_html():
+   return render_template('chamonix.html')
+
+@app.route('/Ischgl')
+def Ischgl_html():
+   return render_template('Ischgl.html')
+
 if __name__ == '__main__':
    app.run(debug = True)
