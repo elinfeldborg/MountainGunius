@@ -6,6 +6,10 @@ app = Flask(__name__)
 def homepage_html():
    return render_template('homepage.html')
 
+@app.route('/homepage')
+def homepage__html():
+   return render_template('homepage.html')
+
 @app.route('/stAnton')
 def stAnton_html():
    return render_template('stAnton.html')
@@ -21,6 +25,10 @@ def chamonix_html():
 @app.route('/Ischgl')
 def Ischgl_html():
    return render_template('Ischgl.html')
+
+@app.route('/mayrhofen')
+def mayrhofen_html():
+   return render_template('mayrhofen.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
