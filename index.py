@@ -4,10 +4,14 @@ import sqlite3
 conn = sqlite3.connect('db/MountainGenius.db')
 print ("Opened database successfully");
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path = "",static_folder= "")
 
 @app.route('/')
 def index_html():
+   return render_template('index.html')
+
+@app.route('/index')
+def index_home_html():
    return render_template('index.html')
 
 @app.route('/elements')
