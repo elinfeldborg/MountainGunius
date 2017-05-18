@@ -68,3 +68,20 @@ def engelberg_html():
 
 if __name__ == '__main__':
    app.run(debug = True)
+<<<<<<< Updated upstream
+=======
+
+@route("/")
+def index():
+   conn=sqlite3.connect("db/MountainGenius.db")
+   cursor = conn.execute("SELECT FROM tips ORDER BY id DESK LIMIT3")
+   return render_template("index.html", tips = cursor)
+
+                         
+
+
+                         
+
+
+   
+>>>>>>> Stashed changes
