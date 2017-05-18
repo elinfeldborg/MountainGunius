@@ -15,7 +15,6 @@ app.config.update(
 
 mail=Mail(app)
 
-
 @app.route('/')
 def footer():
    return render_template('__footer.html')
@@ -33,4 +32,3 @@ def thanks():
 
 if __name__ == '__main__':
    app.run(debug = True)
-
