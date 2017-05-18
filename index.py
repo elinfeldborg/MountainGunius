@@ -4,7 +4,7 @@ import sqlite3
 conn = sqlite3.connect('db/MountainGenius.db')
 print ("Opened database successfully");
 
-app = Flask(__name__, static_url_path = "",static_folder= "")
+app = Flask(__name__)
 
 @app.route('/')
 def index_html():
@@ -68,9 +68,3 @@ def engelberg_html():
 
 if __name__ == '__main__':
    app.run(debug = True)
-
-
-                         
-
-
-   
