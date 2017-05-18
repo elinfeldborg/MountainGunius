@@ -26,7 +26,7 @@ def thanks():
    email = request.form["email"]
    message = request.form["message"]
    text = "Användare: {}\nE-post: {}\nMeddelande: {}".format(name, email, message)
-   msg = Message('Hej!', sender='mountaingenius17@gmail.com', recipients= ['mountaingenius17@gmail.com'])
+   msg = Message('Mountain Genius', sender='mountaingenius17@gmail.com', recipients= ['mountaingenius17@gmail.com'])
    msg.body = text
    mail.send(msg)
    return render_template("index.html")
