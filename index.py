@@ -4,7 +4,7 @@ import sqlite3
 conn = sqlite3.connect('db/MountainGenius.db')
 print ("Opened database successfully");
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path = "",static_folder= "")
 
 @app.route('/')
 def index_html():
@@ -66,22 +66,15 @@ def davos_html():
 def engelberg_html():
    return render_template('engelberg.html')
 
-if __name__ == '__main__':
-   app.run(debug = True)
-<<<<<<< Updated upstream
-=======
-
-@route("/")
+@app.route("/")
 def index():
    conn=sqlite3.connect("db/MountainGenius.db")
    cursor = conn.execute("SELECT FROM tips ORDER BY id DESK LIMIT3")
    return render_template("index.html", tips = cursor)
 
-                         
-
-
+if __name__ == '__main__':
+   app.run(debug = True)
                          
 
 
    
->>>>>>> Stashed changes
