@@ -77,7 +77,11 @@
 					var post 	= $(this),
 						bg 		= post.data('bg');
 
+<<<<<<< HEAD
 					post.css( 'background-image', 'url(images/)' );
+=======
+						post.css( 'background-image', 'url(images/' + bg + ')' );
+>>>>>>> origin/master
 
 				});
 
