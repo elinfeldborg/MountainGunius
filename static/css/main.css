@@ -1790,13 +1790,18 @@
 
 /* Bilder på oss */
 
+.us {
+	margin-left: -20px;
+
+}
+
 .us > h2 {
 	margin-top: 60px;
 }
 
 	#elin1 {
-		width: 215px;
-		height: 210px;
+		width: 210px;
+		height: 200px;
 		display: block;
 		border-radius: 100%;
 		float: left;
@@ -1804,8 +1809,8 @@
 	}
 
 	#elin2 {
-		width: 215px;
-		height: 210px;
+		width: 200px;
+		height: 200px;
 		display: block;
 		border-radius: 100%;
 		float: left;
@@ -1813,8 +1818,8 @@
 	}
 
 	#ellinor {
-		width: 215px;
-		height: 210px;
+		width: 200px;
+		height: 200px;
 		display: block;
 		border-radius: 100%;
 		float: left;
@@ -1822,8 +1827,8 @@
 	}
 
 	#mustafa {
-		width: 215px;
-		height: 210px;
+		width: 200px;
+		height: 200px;
 		display: block;
 		border-radius: 100%;
 		float: left;
