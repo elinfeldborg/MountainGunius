@@ -77,6 +77,22 @@ def davos_html():
 def engelberg_html():
    return render_template('engelberg.html')
 
+@app.route('/orter_italien')
+def orter_italien_html():
+   return render_template('orter_italien.html')
+
+@app.route('/orter_frankrike')
+def orter_frankrike_html():
+   return render_template('orter_frankrike.html')
+
+@app.route('/orter_schweiz')
+def orter_schweiz_html():
+   return render_template('orter_schweiz.html')
+
+@app.route('/orter_osterrike')
+def orter_osterrike_html():
+   return render_template('orter_osterrike.html')
+
 @app.route('/thanks',methods = ["GET", "POST"])
 def thanks():
    name = request.form["name"],

@@ -1787,6 +1787,27 @@
 		}
 
 	}
+/* Rubrik på orter */
+
+h3 {
+	display: block;
+	float: left;
+	padding: 25px;
+	text-align: center;
+	margin-left: 45px;
+	font-size: 25px;
+	margin-bottom: -10px;
+}
+
+
+/* Bilder på orter */
+
+img {
+	border-radius: 100%;
+	height: 250px;
+	width: 250px;
+	padding: 10px;
+}
 
 /* Bilder på oss */
 
