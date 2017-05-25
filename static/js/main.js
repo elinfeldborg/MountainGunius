@@ -1,3 +1,36 @@
+
+/*Den säger till att man kan skriva meddlande */
+function fixElement(element, message) {
+alert(message);
+element.focus();
+}
+
+/*Fuktionen säger att epostadressen är rätt*/
+function isMailReady(form) {
+/* Funktionen säger till om man passerar något fel på fälterna*/
+var passed = false;
+/*Den säger till om man inte skriva namn på namn fältet*/
+if (form.name.value == "") {
+fixElement(form.name, "Du måste fylla i ditt namn för att kunna skicka mail!");
+}
+/*Fuktionen säger till att man har inte anget en rätt epostadress*/
+else if (form.email.value.indexOf("@") == -1 ||
+form.email.value.indexOf(".") == -1) {
+fixElement(form.email, "Du måste fylla i en giltig epostadress för att kunna skicka mail!");
+}
+/*Fuktionen säger till att man har inte skrivit något på meddelandes fältet*/
+else if (form.message.value == "") {
+fixElement(form.message, "Du måste skriva ett meddelande för att kunna skicka mail!");
+}
+/*funktionen säger till om man har skrivet allt rätt på fälterna*/
+else {
+passed = true;
+}
+/*Den säger till att passerar*/
+return passed;
+}
+/*Här avslutar det formellt*/
+
 (function($) {
 
 	skel.breakpoints({
