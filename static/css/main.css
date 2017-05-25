@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800");
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
 
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
@@ -1677,12 +1678,14 @@
 		#header .logo {
 			display: inline-block;
 			height: inherit;
-			left: 1.5em;
+			left: 1.0em;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
 			position: absolute;
 			top: 0;
+			font-size: 30px;
+			font-family: 'Clicker Script', cursive;
 		}
 
 			#header .logo a {
@@ -1812,7 +1815,7 @@ img {
 /* Bilder på oss */
 
 .us {
-	margin-left: -20px;
+	margin-left: 65px;
 
 }
 
@@ -1826,7 +1829,8 @@ img {
 		display: block;
 		border-radius: 100%;
 		float: left;
-		margin-right: 30px;
+		margin-right: 60px;
+		margin-left: -50px;
 	}
 
 	#elin2 {
@@ -1835,7 +1839,8 @@ img {
 		display: block;
 		border-radius: 100%;
 		float: left;
-		margin-right: 30px;
+		margin-right: 60px;
+		margin-left: -50px;
 	}
 
 	#ellinor {
@@ -1844,7 +1849,8 @@ img {
 		display: block;
 		border-radius: 100%;
 		float: left;
-		margin-right: 30px;
+		margin-right: 60px;
+		margin-left: -50px;
 	}
 
 	#mustafa {
@@ -1853,6 +1859,7 @@ img {
 		display: block;
 		border-radius: 100%;
 		float: left;
+		margin-left: -50px;
 	}
 
 /* Menu */
@@ -2648,7 +2655,7 @@ img {
 
 		#footer .icons {
 			text-align: center;
-			padding-top: 320px;
+			padding-top: 250px;
 		}
 
 		#footer .copyright {
