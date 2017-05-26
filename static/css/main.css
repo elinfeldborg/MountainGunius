@@ -1790,18 +1790,7 @@
 		}
 
 	}
-/* Rubrik på orter */
-
-.rubrik > h2 {
-	display: block;
-	float: left;
-
-	text-align: center;
-	margin-left: 125px;
-	font-size: 25px;
-	margin-bottom: -10px;
-}
-
+	
 /* Bilder på oss */
 
 .us {
