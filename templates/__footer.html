@@ -1,55 +1,85 @@
-  <footer id="footer">
-   <div class="inner">
+<footer id="footer">
+ <div class="inner">
 
-      <h2>Kontakta oss</h2>
+    <h2>Kontakta oss</h2>
 
-      <form action="/thanks" method="post" onSubmit = "return isMailReady(this);">
+    <form action="/thanks" method="post" onSubmit = "return isMailReady(this);">
 
-        <div class="field half first">
-          <label for="name">Namn</label>
-          <input name="name" id="name" type="text" placeholder="Namn">
-        </div>
-        <div class="field half">
-          <label for="email">Email</label>
-          <input name="email" id="email" type="email" placeholder="Email">
-        </div>
-        <div class="field">
-          <label for="message">Meddelande</label>
-          <textarea name="message" id="message" rows="6" placeholder="Meddelande"></textarea>
-        </div>
-        <ul class="actions">
-          <li><input value="Skicka meddelande" class="button alt" type="submit"></li>
-        </ul>
-      </form>
-
-      <div class="us">
-        <h2> Vi är Mountain Genius </h2>
-              <img id="elin1" src="static/images/elinFN.jpg">
-              <img id="elin2" src="static/images/elinRossander.jpg">
-              <img id="ellinor" src="static/images/ellinor.jpg">
-              <img id="mustafa" src="static/images/mustafa.jpg">
+      <div class="field half first">
+        <label for="name">Namn</label>
+        <input name="name" id="name" type="text" placeholder="Namn">
       </div>
-
-      <ul class="icons">
-        <li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+      <div class="field half">
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" placeholder="Email">
+      </div>
+      <div class="field">
+        <label for="message">Meddelande</label>
+        <textarea name="message" id="message" rows="6" placeholder="Meddelande"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input value="Skicka meddelande" class="button alt" type="submit"></li>
       </ul>
+    </form>
 
-      <div class="copyright">
-        &copy; Mountain Genius, TEMPLATED
-      </div>
-
+    <div class="us">
+      <h2> Vi är Mountain Genius </h2>
+            <img id="elin1" src="static/images/elinFN.jpg">
+            <img id="elin2" src="static/images/elinRossander.jpg">
+            <img id="ellinor" src="static/images/ellinor.jpg">
+            <img id="mustafa" src="static/images/mustafa.jpg">
     </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="static/js/jquery.min.js"></script>
-  <script src="static/js/jquery.scrolly.min.js"></script>
-  <script src="static/js/jquery.scrollex.min.js"></script>
-  <script src="static/js/skel.min.js"></script>
-  <script src="static/js/util.js"></script>
-  <script src="static/js/main.js"></script>
+    <ul class="icons">
+      <li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
 
-  </body>
-  </html>
+  </form>
+
+
+  <form action="/tips" method="POST">
+
+    <div class="field half first">
+      <label for="name">Namn</label>
+      <input name="name" id="name" type="text" placeholder="Namn">
+    </div>
+    <div class="field half">
+      <label for="destination">Destination</label>
+      <input name="destination" id="destination" type="text" placeholder="Destiantion">
+    </div>
+    <div class="field">
+      <label for="text">Kommentar</label>
+      <textarea name="text" id="text" rows="6" placeholder="Kommentar"></textarea>
+    </div>
+    <ul class="actions">
+      <li><input value="Skicka tips" class="button alt" type="submit"></li>
+    </ul>
+  </form>
+
+  <div class="us">
+    <h2> Vi är Mountain Genius </h2>
+          <img id="elin1" src="static/images/elinFN.jpg">
+          <img id="elin2" src="static/images/elinRossander.jpg">
+          <img id="ellinor" src="static/images/ellinor.jpg">
+          <img id="mustafa" src="static/images/mustafa.jpg">
+  </div>
+
+    <div class="copyright">
+      &copy; Mountain Genius, TEMPLATED
+    </div>
+
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.scrolly.min.js"></script>
+<script src="static/js/jquery.scrollex.min.js"></script>
+<script src="static/js/skel.min.js"></script>
+<script src="static/js/util.js"></script>
+<script src="static/js/main.js"></script>
+
+</body>
+</html>

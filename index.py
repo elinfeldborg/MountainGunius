@@ -1,9 +1,6 @@
 from flask import Flask, render_template, request
-import sqlite3
+import sqlite3 as sql
 from flask_mail import Mail, Message
-
-conn = sqlite3.connect('db/MountainGenius.db')
-print ("Opened database successfully");
 
 app = Flask(__name__, static_url_path = "",static_folder= "")
 
@@ -103,6 +100,38 @@ def thanks():
    msg.body = text
    mail.send(msg)
    return render_template("index.html")
+
+@app.route('/tips',methods = ['POST', 'GET'])
+def tips():
+   print ("SELECT * FROM tips")
+   con = None
+   if request.method == 'POST':
+      try:
+         name = request.form['name']
+         destination = request.form['destination']
+         text = request.form['text']
+
+         with sql.connect("db/MountainGenius.db") as con:
+            cur = con.cursor()
+
+            cur.execute("INSERT INTO tips (name,destination,text) VALUES (?,?,?)",(name,destination,text))
+
+            con.commit()
+
+      except:
+         con.rollback()
+         print("error in insert operation")
+
+   if con is None:
+      con = sql.connect("db/MountainGenius.db")
+   con.row_factory = sql.Row
+
+   cur = con.cursor()
+   cur.execute("SELECT * FROM tips")
+
+   rows = cur.fetchall();
+   con.close()
+   return render_template("list.html",rows = rows)
 
 if __name__ == '__main__':
    app.run(debug = True)
