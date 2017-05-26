@@ -1790,7 +1790,7 @@
 		}
 
 	}
-	
+
 /* Bilder på oss */
 
 .us {
@@ -1841,6 +1841,22 @@
 		float: left;
 		margin-left: -50px;
 	}
+
+/* Tips */
+
+table {
+	text-align: left;
+}
+
+header > h2 {
+	text-align: center;
+}
+
+/* Box i __footer__till__tips */
+
+#box_footer {
+	background-color: #02162B;
+}
 
 /* Menu */
 
