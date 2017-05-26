@@ -127,7 +127,7 @@ def tips():
    con.row_factory = sql.Row
 
    cur = con.cursor()
-   cur.execute("SELECT * FROM tips")
+   cur.execute("SELECT * FROM tips order by id desc LIMIT 3")
 
    rows = cur.fetchall();
    con.close()
