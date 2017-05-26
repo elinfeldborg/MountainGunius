@@ -1848,14 +1848,17 @@ table {
 	text-align: left;
 }
 
-header > h2 {
-	text-align: center;
-}
-
-/* Box i __footer__till__tips */
-
 #box_footer {
 	background-color: #02162B;
+	margin-top: 60px;
+}
+
+.td {
+	font-weight: bold;
+}
+
+header > h2 {
+	text-align: left;
 }
 
 /* Menu */
