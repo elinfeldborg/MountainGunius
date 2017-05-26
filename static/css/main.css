@@ -1857,8 +1857,8 @@ table {
 	font-weight: bold;
 }
 
-header > h2 {
-	text-align: left;
+header {
+	text-align: center;
 }
 
 /* Menu */
