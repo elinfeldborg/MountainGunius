@@ -74,6 +74,10 @@ def davos_html():
 def engelberg_html():
    return render_template('engelberg.html')
 
+@app.route('/__foter__till__tips')
+def __foter__till__tips_html():
+   return render_template('__foter__till__tips.html')
+
 @app.route('/orter_italien')
 def orter_italien_html():
    return render_template('orter_italien.html')
@@ -131,7 +135,7 @@ def tips():
 
    rows = cur.fetchall();
    con.close()
-   return render_template("list.html",rows = rows)
+   return render_template("tips.html",rows = rows)
 
 if __name__ == '__main__':
    app.run(debug = True)

@@ -1,0 +1,36 @@
+{% include '__header_till_alla_orter.html' %}
+
+<section id="banner" class="bg-img" data-bg="banner.jpg">
+	<div class="inner">
+		<header>
+			<h1>Tips från besökare</h1>
+		</header>
+	</div>
+	<a href="#one" class="more">Read More</a>
+</section>
+
+			<section id="post" class="wrapper bg-img" data-bg="banner12.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Tips från besökare</h2>
+						</header>
+
+      <table border = 1>
+         <thead>
+            <td>Namn</td>
+            <td>Destination</td>
+            <td>Kommentar</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["destination"]}}</td>
+               <td> {{ row["text"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+    </section>
+
+{% include '__footer__till__tips.html' %}
